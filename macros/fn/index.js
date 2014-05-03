@@ -95,7 +95,7 @@ macro $lc__dotexpr {
   }
 }
 
-macro lam {
+macro fn {
   rule { [ $body ... ] } => {
     $lc__placeholders ( $body ... )
   }
@@ -107,4 +107,4 @@ macro lam {
   }
 }
 
-export lam;
+export fn;
